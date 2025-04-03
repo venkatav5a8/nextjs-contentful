@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Person({ person }: { person: any }) {
   if (!person) return null;
 

@@ -7,6 +7,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { ContentfulLivePreviewProvider, useContentfulLiveUpdates } from "@contentful/live-preview/react";
 import Person from "./Person";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Story({ result }: { result: any }) {
   const updatedResult = useContentfulLiveUpdates(result);
 
